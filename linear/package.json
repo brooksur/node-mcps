@@ -1,0 +1,29 @@
+{
+  "name": "mcp",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Brooks Benson",
+  "bin": {
+    "mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\""
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@linear/sdk": "^38.0.0",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
